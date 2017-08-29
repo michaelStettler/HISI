@@ -149,7 +149,7 @@ fi
 if [[ ! -f "results/accuracy_mnist_double_train_3bar_train_mnist_double_test_4bar_test.npy" ]]; then
     echo "do: mnist_double_train_3bar_train mnist_double_test_4bar_test"
     python CNN_double.py mnist_double_train_3bar_train mnist_double_test_4bar_test
-if
+fi
 
 if [[ ! -f "results/accuracy_mnist_double_train_3bar_train_mnist_double_test_4bar_test_4bar.npy" ]]; then
     echo "do: mnist_double_train_3bar_train mnist_double_test_4bar_test_4bar"
@@ -179,7 +179,7 @@ fi
 if [[ ! -f "results/accuracy_mnist_double_train_3bar_HISI_mnist_double_test_4bar_HISI.npy" ]]; then
     echo "do: mnist_double_train_3bar_HISI mnist_double_test_4bar_HISI"
     python CNN_double.py mnist_double_train_3bar_HISI mnist_double_test_4bar_HISI
-if
+fi
 
 
 
@@ -187,5 +187,4 @@ END=$(date +%s.%N)
 DIFF=$(echo "$END - $START" | bc)
 
 echo "Simulation finished! Simulation time:" $DIFF
-
 
